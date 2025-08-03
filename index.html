@@ -38,7 +38,7 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
-      opacity: 0.5;
+      opacity: 1;
     }
 
     .navbar {
@@ -98,7 +98,16 @@
       <source src="video.mp4" type="video/mp4">
       Seu navegador não suporta vídeos HTML5.
     </video>
-    <h1>LIMER nets</h1>
+    <div class="video-overlay"></div>
+    .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* ajuste aqui a opacidade da película preta */
+  z-index: 0;
+    <h1>LIMER </h1>
     <p class="lead">Um token visionário para o futuro descentralizado</p>
   </header>
 
