@@ -10,62 +10,125 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       color: #212529;
     }
 
     header {
-      background-color: #00c18c;
+      background: linear-gradient(90deg, #00c18c, #007f64);
       color: white;
-      padding: 2rem 0;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
     }
 
     section {
       padding: 4rem 0;
     }
 
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
     .btn-primary {
       background-color: #00c18c;
       border: none;
+      font-weight: 600;
     }
 
     .btn-primary:hover {
       background-color: #009f74;
     }
+
+    .feature-card {
+      padding: 2rem;
+      border-radius: 1rem;
+      background-color: #f1f3f5;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 
 <body>
-  <header class="text-center">
-    <h1>LIMER nets</h1>
-    <p>O token com liquidez autoalimentada e futuro brilhante</p>
-    <a href="#" class="btn btn-primary mt-3">Comprar na PancakeSwap</a>
+  <header>
+    <div class="container">
+      <h1>LIMER nets</h1>
+      <p class="lead">Um token visionário para o futuro descentralizado</p>
+      <a href="#comprar" class="btn btn-primary mt-3">Adquirir Token</a>
+    </div>
   </header>
 
   <section id="sobre" class="container">
-    <h2>Sobre o Token</h2>
-    <p>LIMER nets é um token inovador na Binance Smart Chain com 0,4% de taxa por transação, divida entre queima e liquidez automática. Criado para crescer com a comunidade.</p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Sobre o Projeto</h2>
+        <p>LIMER nets é um token inovador construído sobre a Binance Smart Chain, criado com o objetivo de fornecer utilidade real, crescimento sustentável e envolvimento comunitário. Nosso foco é criar uma base sólida e confiável para o ecossistema cripto.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-card">
+          <h4>500.000.000 de unidades</h4>
+          <p>Supply total limitado para garantir valor e escassez.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="tokenomics" class="bg-light">
     <div class="container">
-      <h2>Tokenomics</h2>
-      <ul>
-        <li>Supply total: 400.000.000</li>
-        <li>Taxa de transação: 0,4%</li>
-        <li>Burn automático: Sim</li>
-        <li>Liquidez autoalimentada: Sim</li>
-      </ul>
+      <h2 class="text-center">Tokenomics</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="feature-card">
+            <h5>Total Supply</h5>
+            <p>500.000.000</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-card">
+            <h5>Contrato</h5>
+            <p><code>0x44B03271fc14e3F762C830CBdADd21688a8333e7</code></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-card">
+            <h5>Burn</h5>
+            <p>Função de queima integrada</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-card">
+            <h5>Liquidez</h5>
+            <p>Liquidez autoalimentada</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="comprar" class="container">
     <h2>Como Comprar</h2>
     <ol>
-      <li>Instale a carteira MetaMask ou TrustWallet</li>
+      <li>Instale a MetaMask ou TrustWallet</li>
       <li>Adicione a rede Binance Smart Chain</li>
       <li>Acesse PancakeSwap e conecte sua carteira</li>
-      <li>Insira o contrato do token LIMER: <code>0x44B03271fc14e3F762C830CBdADd21688a8333e7</code></li>
+      <li>Use o contrato: <code>0x44B03271fc14e3F762C830CBdADd21688a8333e7</code></li>
     </ol>
   </section>
 
@@ -75,49 +138,26 @@
       <ul>
         <li>Q3 2025 - Lançamento oficial do token</li>
         <li>Q4 2025 - Listagem em CoinMarketCap</li>
-        <li>Q1 2026 - Expansão da comunidade global</li>
-        <li>Q2 2026 - Staking e parcerias</li>
+        <li>Q1 2026 - Expansão da comunidade e staking</li>
+        <li>Q2 2026 - Parcerias estratégicas</li>
       </ul>
     </div>
   </section>
 
-  <section id="faq" class="container">
-    <h2>Perguntas Frequentes (FAQ)</h2>
-    <p><strong>O que é LIMER?</strong> É um token BEP-20 com queima automática e liquidez crescente.</p>
-    <p><strong>Onde posso comprar?</strong> Em PancakeSwap usando BNB.</p>
-    <p><strong>O token é auditado?</strong> Sim, o contrato será verificado no BscScan.</p>
-  </section>
-
-  <section id="newsletter" class="bg-light">
-    <div class="container">
-      <h2>Cadastre seu E-mail</h2>
-      <form class="row g-3">
-        <div class="col-auto">
-          <input type="email" class="form-control" placeholder="Seu e-mail" />
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
   <section class="container text-center">
-    <h2>Comunidade</h2>
-    <p>Entre para nosso grupo oficial no Telegram e acompanhe o projeto!</p>
-    <a href="#" class="btn btn-outline-success">Entrar no Telegram</a>
+    <h2>Junte-se à Comunidade</h2>
+    <p>Participe das nossas redes sociais e acompanhe todas as novidades do ecossistema LIMER.</p>
+    <a href="#" class="btn btn-outline-success">Telegram Oficial</a>
   </section>
 
-  <footer class="text-center py-4">
-    <small>&copy; 2025 LIMER nets. Todos os direitos reservados.</small>
-    <br />
+  <footer>
+    <small>&copy; 2025 LIMER nets. Todos os direitos reservados.</small><br />
     <button onclick="alternarIdioma()" class="btn btn-sm btn-link">Switch to English</button>
   </footer>
 
   <script>
     function alternarIdioma() {
-      document.body.lang = document.body.lang === 'pt' ? 'en' : 'pt';
-      alert("Alternância de idioma simulada (conteúdo dinâmico em breve).");
+      alert("Modo de idioma alternado - funcionalidade futura");
     }
   </script>
 </body>
