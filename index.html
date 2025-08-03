@@ -40,6 +40,18 @@
       z-index: -1;
     }
 
+    /* Camada preta semitransparente sobre o vídeo */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* 30% opacidade preta */
+      z-index: 0;
+    }
+
     header h1 {
       font-size: 4rem;
       font-weight: 800;
@@ -117,7 +129,7 @@
 <body>
   <header>
     <video autoplay muted loop>
-      <source src="video.mp4" type="video/mp4">
+      <source src="video.mp4" type="video/mp4" />
       Seu navegador não suporta vídeos HTML5.
     </video>
     <h1>LIMER</h1>
